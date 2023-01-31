@@ -15,9 +15,10 @@ with open("config.json") as config_file:
 with open("first.html","w") as output_file:
     output_file.write(
         template.render(
-                article = article
-            )
-        )
+            title = config["title"],
+            article = article
+         )
+    )
 
 
 
